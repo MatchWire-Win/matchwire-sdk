@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "win.matchwire/mapping",
+  "title": "matchwire.win \u2014 Mapped Prediction Markets (Kalshi, Polymarket, Predict.fun)",
+  "description": "One row per game, matched across Kalshi, Polymarket US/Intl and Predict.fun. Mapping only.",
+  "version": "0.1.0",
+  "websiteUrl": "https://matchwire.win",
+  "repository": {
+    "url": "https://github.com/MatchWire-Win/matchwire-sdk",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.matchwire.win/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "matchwire.win API key (mw_...). Required: every tool result is narrowed to the key's plan exactly like the HTTP API. Keys are issued at https://matchwire.win/#pricing \u2014 plans start at $99/month, 14-day trial on Starter.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
