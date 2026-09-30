@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matchwire.win"
+version = "0.1.0"
+description = "Mapped prediction-market data for Python: one row per game across Kalshi, Polymarket US, Polymarket International and Predict.fun, each venue's own market id kept intact. Mapping only — no prices."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "matchwire.win" }]
+keywords = [
+  "matchwire",
+  "prediction-markets",
+  "prediction-market-api",
+  "kalshi",
+  "kalshi-api",
+  "polymarket",
+  "polymarket-api",
+  "predictfun",
+  "event-mapping",
+  "market-mapping",
+  "cross-venue",
+  "mcp",
+  "model-context-protocol",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://matchwire.win"
+Documentation = "https://matchwire.win/docs/"
+Repository = "https://github.com/MatchWire-Win/matchwire-sdk"
+Changelog = "https://github.com/MatchWire-Win/matchwire-sdk/blob/main/CHANGELOG.md"
+"Issue Tracker" = "https://github.com/MatchWire-Win/matchwire-sdk/issues"
+
+[tool.setuptools]
+packages = ["matchwire"]

@@ -1,0 +1,65 @@
+{
+  "name": "matchwire.win",
+  "version": "0.1.0",
+  "description": "Zero-dependency Node.js client for matchwire.win — sports prediction markets mapped across Kalshi, Polymarket US, Polymarket International and Predict.fun, one row per game with every venue's own market id kept intact.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./src/index.cjs",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "require": "./src/index.cjs",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/",
+    "quickstart": "node examples/quickstart.mjs"
+  },
+  "keywords": [
+    "matchwire",
+    "matchwire.win",
+    "prediction-markets",
+    "prediction-market-api",
+    "kalshi",
+    "kalshi-api",
+    "polymarket",
+    "polymarket-api",
+    "predictfun",
+    "event-mapping",
+    "market-mapping",
+    "cross-venue",
+    "sports-data",
+    "mcp",
+    "model-context-protocol",
+    "api-client",
+    "zero-dependencies"
+  ],
+  "homepage": "https://matchwire.win",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatchWire-Win/matchwire-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatchWire-Win/matchwire-sdk/issues"
+  },
+  "author": "matchwire.win",
+  "publishConfig": {
+    "access": "public"
+  }
+}
